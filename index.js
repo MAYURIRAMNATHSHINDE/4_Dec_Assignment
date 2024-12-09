@@ -41,7 +41,7 @@ const students = [
 const result = processStudents(students);
 console.log(result);
 
-/************************************ Q. no 3************************************ */
+/************************************ Q. no 4************************************ */
 
 
 let employeeData=[{name:"Alice",tasksCompleted:9,rating:4.5,},
@@ -73,3 +73,14 @@ newData.sort((a,b)=>{
     }
 })
 console.log(newData)
+
+
+/*********************************** Q. no 3************************** */
+
+let Product =["electronics", "clothing", "electronics", "toys", "clothing", "toys", "toys"];
+
+let countItems= Product.reduce((acc,category)=>{
+    acc[category] = acc[category] == undefined ? 1 : acc[category] + 1;
+    return acc;
+},{});
+console.log(countItems)
